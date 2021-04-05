@@ -6,8 +6,21 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="ng1/lib/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="ng1/app.css" />
+
+  <script src="ng1/lib/angular/angular.js"></script>
+  <script src="ng1/app.module.js"></script>
+  <script src="ng1/phone-list/phone-list.module.js"></script>
+  <script src="ng1/phone-list/phone-list.component.js"></script>
+  <script src="ng1/testcomp/testcomp.js"></script>
 </head>
 <body>
+  <div ng-app="phonecatApp">
+    <test-comp></test-comp>
+    <phone-list></phone-list>
+  </div>
   <app-root></app-root>
 </body>
 </html>
